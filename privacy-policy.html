@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy — Profile Lock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a1a;
+            color: #e0e0f0;
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #f0f0ff, #a855f7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .last-updated {
+            font-size: 13px;
+            color: rgba(200, 200, 230, 0.5);
+            margin-bottom: 32px;
+        }
+
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #c4b5fd;
+            margin-top: 32px;
+            margin-bottom: 12px;
+        }
+
+        p,
+        li {
+            font-size: 15px;
+            color: rgba(220, 220, 240, 0.8);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 24px;
+            margin-bottom: 12px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        a {
+            color: #a855f7;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .highlight {
+            background: rgba(168, 85, 247, 0.1);
+            border-left: 3px solid #a855f7;
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            margin: 16px 0;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            font-size: 13px;
+            color: rgba(200, 200, 230, 0.4);
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p class="last-updated">Last updated: March 11, 2026</p>
+
+        <p>Profile Lock ("the Extension") is a Chrome browser extension that allows users to password-protect their
+            Chrome profiles. This privacy policy explains how we handle your data.</p>
+
+        <div class="highlight">
+            <strong>In short:</strong> Profile Lock does not collect, transmit, or share any personal data. All
+            information stays on your device.
+        </div>
+
+        <h2>1. Data Collection</h2>
+        <p>Profile Lock does <strong>not</strong> collect any personal information. We do not collect:</p>
+        <ul>
+            <li>Names, email addresses, or any personally identifiable information</li>
+            <li>Browsing history or web activity</li>
+            <li>IP addresses or location data</li>
+            <li>Analytics, telemetry, or usage statistics</li>
+        </ul>
+
+        <h2>2. Data Storage</h2>
+        <p>The only data stored by the Extension is:</p>
+        <ul>
+            <li><strong>Password hash</strong> — Your password is converted into a SHA-256 hash (a one-way cryptographic
+                digest) before being stored. The original password is never saved.</li>
+            <li><strong>Lock state</strong> — A boolean flag indicating whether the profile is currently locked.</li>
+        </ul>
+        <p>All data is stored locally on your device using Chrome's <code>chrome.storage.local</code> API. This data is
+            specific to each Chrome profile and is never transmitted to any external server.</p>
+
+        <h2>3. Data Sharing</h2>
+        <p>Profile Lock does <strong>not</strong> share any data with third parties. There are no external servers,
+            APIs, analytics services, or advertising networks involved.</p>
+
+        <h2>4. Permissions</h2>
+        <p>The Extension requires the following Chrome permissions:</p>
+        <ul>
+            <li><strong>storage</strong> — To save the password hash and lock state locally on your device.</li>
+            <li><strong>tabs</strong> — To display the lock screen and manage tab behavior when the profile is locked.
+            </li>
+            <li><strong>alarms</strong> — Reserved for potential future features such as auto-lock timers.</li>
+        </ul>
+
+        <h2>5. Security</h2>
+        <p>We take reasonable measures to protect your data:</p>
+        <ul>
+            <li>Passwords are stored as SHA-256 hashes, not in plain text.</li>
+            <li>All data remains local to your device and Chrome profile.</li>
+            <li>No network requests are made by the Extension.</li>
+        </ul>
+
+        <h2>6. Children's Privacy</h2>
+        <p>Profile Lock does not knowingly collect data from children under 13. Since no personal data is collected at
+            all, the Extension is safe for use by all ages.</p>
+
+        <h2>7. Changes to This Policy</h2>
+        <p>We may update this privacy policy from time to time. Any changes will be reflected in the "Last updated" date
+            at the top of this page.</p>
+
+        <h2>8. Contact</h2>
+        <p>If you have any questions about this privacy policy, please contact us at:</p>
+        <p><a href="mailto:connect@digiminds.net">connect@digiminds.net</a></p>
+
+        <footer>
+            &copy; 2026 Profile Lock. All rights reserved.
+        </footer>
+    </div>
+</body>
+
+</html>
